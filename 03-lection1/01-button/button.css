@@ -1,1 +1,104 @@
 /* Стилизация кнопки */
+:root {
+
+    /*Primary Color*/
+    --primary-color: #4263EB;
+    --primary-hover-color: #2342C0;
+    --primary-text-color: #FFFFFF; 
+
+    /*Secondary Color*/
+    --secondary-color: #7048E8; 
+    --secondary-hover-color: #5028C6; 
+    --secondary-text-color: #FFFFFF; 
+
+     /*Alternate Color*/
+    --alternate-color: #ffffff;
+    --alternate-hover-color: #ffffff;
+    --alternate-text-color: #495057; 
+
+     /*Alternate Border Color*/
+    --alternate-border-color: #ACB5BD;
+    --alternate-border-hover-color: #212429;
+}
+
+button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    padding: 14px 64px;
+    border-radius: 8px;
+    margin: 8px;
+ }
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+/*Default*/
+
+.button_default_primary {
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    border: none;
+}
+.button_default_secondary {
+    background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
+    border: none;
+}
+.button_default_alternate {
+    background-color: var(--alternate-color);
+    color: var(--alternate-text-color);
+    border: 1px solid var(--alternate-border-color) ;
+}
+
+/*Hover*/
+.button_hover button:hover {
+    cursor: pointer;
+}
+.button_hover_primary{
+    background-color: var(--primary-hover-color);
+    color: var(--primary-text-color);
+    border: none;
+}
+.button_hover_secondary{
+    background-color: var(--secondary-hover-color);
+    color: var(--primary-text-color);
+    border: none;
+}
+.button_hover_alternate{
+    background-color: var(--alternate-color);
+    color: var(--alternate-text-color);
+    border: 1px solid var(--alternate-border-hover-color) ;
+}
+
+/*Disabled*/
+.button_disabled button:disabled {
+    cursor: not-allowed;
+}
+.button_disabled_primary {
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    border: none;
+    opacity: 0.5;
+}
+.button_disabled_secondary {
+    background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
+    border: none;
+    opacity: 0.5;
+}
+.button_disabled_alternate {
+    background-color: var(--alternate-color);
+    color: var(--alternate-text-color);
+    border: 1px solid var(--alternate-border-color) ;
+    opacity: 0.5;
+}
